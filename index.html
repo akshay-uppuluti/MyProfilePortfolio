@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Uppuluti Akshay — Senior Software Engineer | SDET</title>
+<meta name="description" content="Senior Software Engineer specializing in end-to-end test automation across Web, API, and Desktop platforms." />
+<meta name="theme-color" content="#05060f" />
+<link rel="canonical" href="https://uppulutiakshay.dev/" />
+<link rel="icon" type="image/png" href="images/AkshayImageDP.png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Uppuluti Akshay — Senior Software Engineer | SDET" />
+<meta property="og:description" content="Senior Software Engineer specializing in end-to-end test automation across Web, API, and Desktop platforms." />
+<meta property="og:image" content="images/AkshayImageDP.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Uppuluti Akshay — Senior Software Engineer | SDET" />
+<meta name="twitter:description" content="Senior Software Engineer specializing in end-to-end test automation across Web, API, and Desktop platforms." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <div class="bg-fx" aria-hidden="true">
+    <canvas id="particleCanvas"></canvas>
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+    <span class="orb orb--4"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="loader" id="loader">
+    <div class="loader__ring"></div>
+    <img src="images/AkshayImageDP.png" alt="Uppuluti Akshay" class="loader__img" />
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo">
+      <img src="images/AkshayImageDP.png" alt="Uppuluti Akshay" class="nav__logo-img" />
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link is-active" data-nav>Home</a>
+      <a href="#about" class="nav__link" data-nav>About</a>
+      <a href="#skills" class="nav__link" data-nav>Skills</a>
+      <a href="#experience" class="nav__link" data-nav>Experience</a>
+      <a href="#projects" class="nav__link" data-nav>Projects</a>
+      <a href="#certifications" class="nav__link" data-nav>Certifications</a>
+      <a href="#testimonials" class="nav__link" data-nav>Testimonials</a>
+      <a href="insights.html" class="nav__link">Insights</a>
+      <a href="#contact" class="nav__link" data-nav>Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="cmdk-trigger" id="cmdkTrigger" aria-label="Open command palette">
+        <span>⌘K</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="dot-nav" id="dotNav" aria-label="Section navigation">
+    <a href="#home" class="dot-nav__dot is-active" data-nav-dot data-tooltip="Home"></a>
+    <a href="#about" class="dot-nav__dot" data-nav-dot data-tooltip="About"></a>
+    <a href="#skills" class="dot-nav__dot" data-nav-dot data-tooltip="Skills"></a>
+    <a href="#experience" class="dot-nav__dot" data-nav-dot data-tooltip="Experience"></a>
+    <a href="#projects" class="dot-nav__dot" data-nav-dot data-tooltip="Projects"></a>
+    <a href="#certifications" class="dot-nav__dot" data-nav-dot data-tooltip="Certifications"></a>
+    <a href="#testimonials" class="dot-nav__dot" data-nav-dot data-tooltip="Testimonials"></a>
+    <a href="#contact" class="dot-nav__dot" data-nav-dot data-tooltip="Contact"></a>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal-up"><span class="dot-live"></span> Available for Senior Software Engineer</p>
+        <h1 class="hero__title reveal-up" data-delay="1">
+          <span class="hero__greeting">Hi, I'm</span>
+          <span class="gradient-text" id="typedName">Uppuluti Akshay</span>
+        </h1>
+        <h2 class="hero__subtitle reveal-up" data-delay="2">
+          <span class="typed-role" id="typedRole"></span><span class="cursor-blink">|</span>
+        </h2>
+        <p class="hero__desc reveal-up" data-delay="3">
+          Senior Software Engineer specializing in end-to-end <strong>test automation</strong> across
+          Web, API, and Desktop platforms. Skilled in building resilient BDD frameworks, driving test data
+          strategy with GenRocket, and partnering closely with stakeholders to ship dependable software faster.
+        </p>
+        <div class="hero__cta reveal-up" data-delay="4">
+          <a href="#projects" class="btn btn--primary"><span>View Projects</span></a>
+          <a href="files/Resume.pdf" download class="btn btn--ghost"><span>Download Resume</span></a>
+        </div>
+        <div class="hero__stats reveal-up" data-delay="5">
+          <div class="stat">
+            <span class="stat__value" data-counter="4.5" data-suffix="+">0</span>
+            <span class="stat__label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value" data-counter="500" data-suffix="+">0</span>
+            <span class="stat__label">Automated Test Cases</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value" data-counter="10" data-suffix="+">0</span>
+            <span class="stat__label">Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value" data-counter="95" data-suffix="%">0</span>
+            <span class="stat__label">Automation Success Rate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal-up" data-delay="2">
+        <div class="hero-card">
+          <div class="hero-card__glow"></div>
+          <div class="hero-card__ring"></div>
+          <div class="hero-card__avatar" style="background-image:url('images/AkshayImageDP.png');background-size:cover;background-position:center;"></div>
+          <div class="hero-card__badge hero-card__badge--1">
+            <span>🧪</span> Selenium
+          </div>
+          <div class="hero-card__badge hero-card__badge--2">
+            <span>🔌</span> RestSharp
+          </div>
+          <div class="hero-card__badge hero-card__badge--3">
+            <span>🤖</span> BDD
+          </div>
+          <div class="hero-card__badge hero-card__badge--4">
+            <span>☁️</span> Azure DevOps
+          </div>
+          <div class="hero-card__badge hero-card__badge--5">
+            <span>🔷</span> C#
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <p class="section-tag reveal-up"><span class="section-tag__icon">👤</span><span class="section-tag__text">about me</span></p>
+      <h2 class="section-title reveal-up">Building quality into every release</h2>
+
+      <div class="about__grid">
+          <div class="about__text reveal-up">
+              <p>
+                  I am a <strong>Senior Software Engineer</strong> with 4.5+ years of proven expertise in architecting and scaling automation frameworks across Web, API, and Desktop applications. My focus is on embedding quality into every release cycle by reducing regression overhead, strengthening release confidence, and enabling faster, more reliable delivery pipelines.
+              </p>
+              <p>
+                  I specialize in <strong>Behavior‑driven development (BDD)</strong> frameworks using Reqnroll, SpecFlow, and Cucumber, alongside data‑driven testing strategies powered by GenRocket. My experience extends to seamless <strong>CI/CD integration with Azure DevOps Pipelines,</strong> ensuring automation is a core enabler of continuous delivery.
+              </p>
+
+              <p>
+                  Beyond technical execution, <strong>I am passionate about mentoring peers,</strong> simplifying complex systems, and transforming manual test debt into resilient automated coverage. I thrive in <strong>Agile environments,</strong> consistently driving initiatives that balance speed with uncompromising quality, while fostering collaboration and innovation across teams.
+              </p>
+                  <div class="about__info">
+                      <div class="info-item">
+                          <span class="info-item__label">Location</span>
+                          <span class="info-item__value">Hyderabad, Telangana, 500085</span>
+                      </div>
+                      <div class="info-item">
+                          <span class="info-item__label">Email</span>
+                          <span class="info-item__value">uppuluti.akshay@gmail.com</span>
+                      </div>
+                      <div class="info-item">
+                          <span class="info-item__label">Phone</span>
+                          <span class="info-item__value">+91 7224840581</span>
+                      </div>
+                      <div class="info-item">
+                          <span class="info-item__label">Role</span>
+                          <span class="info-item__value">Senior Software Engineer — SDET</span>
+                      </div>
+                  </div>
+          </div>
+
+        <div class="about__timeline-mini reveal-up">
+          <div class="mini-card">
+            <span class="mini-card__icon">🎯</span>
+            <h4>Mission</h4>
+            <p>Deliver dependable software through resilient, maintainable test automation.</p>
+          </div>
+          <div class="mini-card">
+            <span class="mini-card__icon">⚙️</span>
+            <h4>Approach</h4>
+            <p>BDD-first frameworks, data-driven design, and CI/CD baked into every pipeline.</p>
+          </div>
+          <div class="mini-card">
+            <span class="mini-card__icon">📈</span>
+            <h4>Impact</h4>
+            <p>Cut regression testing effort by up to 70% through parallelized automation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills" id="skills">
+      <p class="section-tag reveal-up"><span class="section-tag__icon">🫠</span><span class="section-tag__text">tech stack</span></p>
+      <h2 class="section-title reveal-up">Skills &amp; Toolbox</h2>
+
+      <div class="skills__search reveal-up">
+        <input type="text" id="skillsSearch" placeholder="Search skills… (e.g. Selenium, C#, Azure)" />
+      </div>
+
+      <div class="skills__grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="experience" id="experience">
+      <p class="section-tag reveal-up"><span class="section-tag__icon">💼</span><span class="section-tag__text">career path</span></p>
+      <h2 class="section-title reveal-up">Experience</h2>
+
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <p class="section-tag reveal-up"><span class="section-tag__icon">🚀</span><span class="section-tag__text">selected work</span></p>
+      <h2 class="section-title reveal-up">Featured Projects</h2>
+
+      <div class="projects__toolbar reveal-up">
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn is-active" data-filter="All">All</button>
+          <button class="filter-btn" data-filter="Web">Web</button>
+          <button class="filter-btn" data-filter="API">API</button>
+          <button class="filter-btn" data-filter="Desktop">Desktop</button>
+        </div>
+        <div class="projects__search">
+          <input type="text" id="projectsSearch" placeholder="Search projects…" aria-label="Search projects" />
+        </div>
+      </div>
+
+      <div class="projects__grid" id="projectsGrid"></div>
+      <p class="projects__empty" id="projectsEmpty" hidden>No projects match your search. Try a different keyword.</p>
+    </section>
+
+    <!-- ============ GITHUB REPOS ============ -->
+    <section class="repos" id="repos">
+      <p class="section-tag reveal-up"><span class="section-tag__icon">🐙</span><span class="section-tag__text">open source</span></p>
+      <h2 class="section-title reveal-up">GitHub Repositories</h2>
+      <div class="repos__grid" id="reposGrid"></div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="certifications" id="certifications">
+      <p class="section-tag reveal-up"><span class="section-tag__icon">🎖️</span><span class="section-tag__text">credentials</span></p>
+      <h2 class="section-title reveal-up">Certifications &amp; Accomplishments</h2>
+
+      <div class="certs__grid" id="certsGrid"></div>
+
+      <div class="accomplishments reveal-up">
+        <h3>Key Accomplishments</h3>
+        <ul id="accomplishmentsList"></ul>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonials">
+      <p class="section-tag reveal-up"><span class="section-tag__icon">💬</span><span class="section-tag__text">kind words</span></p>
+      <h2 class="section-title reveal-up">Testimonials</h2>
+
+      <div class="testimonial-carousel reveal-up" id="testimonialCarousel">
+        <div class="testimonial-track" id="testimonialTrack"></div>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <p class="section-tag reveal-up"><span class="section-tag__icon">📩</span><span class="section-tag__text">get in touch</span></p>
+      <h2 class="section-title reveal-up">Let's build something great</h2>
+      <p class="contact__lead reveal-up">
+        Open to Senior Software Engineer &amp; Test Automation opportunities. Drop a message — I usually
+        reply within 24 hours.
+      </p>
+
+      <div class="contact__grid">
+        <form class="contact-form reveal-up" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <input type="text" id="cf-name" name="name" placeholder=" " required maxlength="100" />
+              <label for="cf-name">Your Name</label>
+              <span class="field__line"></span>
+            </div>
+            <div class="field">
+              <input type="email" id="cf-email" name="email" placeholder=" " required maxlength="200" />
+              <label for="cf-email">Your Email</label>
+              <span class="field__line"></span>
+            </div>
+          </div>
+          <div class="field">
+            <input type="text" id="cf-subject" name="subject" placeholder=" " required maxlength="150" />
+            <label for="cf-subject">Subject</label>
+            <span class="field__line"></span>
+          </div>
+          <div class="field">
+            <textarea id="cf-message" name="message" rows="5" placeholder=" " required maxlength="4000"></textarea>
+            <label for="cf-message">Your Message</label>
+            <span class="field__line"></span>
+          </div>
+          <input type="text" name="website" id="cf-website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="btn btn--primary btn--block">
+            <span id="submitLabel">Send Message</span>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact__side reveal-up">
+          <div class="contact-chip">
+            <a class="contact-chip__link" href="mailto:uppuluti.akshay@gmail.com">
+              <span class="contact-chip__icon">📧</span>
+              <span>uppuluti.akshay@gmail.com</span>
+            </a>
+            <button type="button" class="contact-chip__copy" data-copy="uppuluti.akshay@gmail.com" aria-label="Copy email">⧉</button>
+          </div>
+          <div class="contact-chip">
+            <a class="contact-chip__link" href="tel:+917224840581">
+              <span class="contact-chip__icon">📞</span>
+              <span>+91 7224840581</span>
+            </a>
+            <button type="button" class="contact-chip__copy" data-copy="+91 7224840581" aria-label="Copy phone number">⧉</button>
+          </div>
+          <div class="contact-chip">
+            <a class="contact-chip__link" href="https://linkedin.com/in/uppulutiakshay" target="_blank" rel="noopener">
+              <span class="contact-chip__icon">💼</span>
+              <span>linkedin.com/in/uppulutiakshay</span>
+            </a>
+            <button type="button" class="contact-chip__copy" data-copy="https://linkedin.com/in/uppulutiakshay" aria-label="Copy LinkedIn URL">⧉</button>
+          </div>
+          <div class="contact-chip">
+            <a class="contact-chip__link" href="https://github.com/uppuluti-akshay" target="_blank" rel="noopener">
+              <span class="contact-chip__icon">🐙</span>
+              <span>github.com/uppuluti-akshay</span>
+            </a>
+            <button type="button" class="contact-chip__copy" data-copy="https://github.com/uppuluti-akshay" aria-label="Copy GitHub URL">⧉</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Uppuluti Akshay. Crafted with precision &amp; passion.</p>
+    <button class="to-top" id="toTop" aria-label="Back to top">
+      <svg class="to-top__ring" viewBox="0 0 44 44" aria-hidden="true">
+        <circle class="to-top__track" cx="22" cy="22" r="19"></circle>
+        <circle class="to-top__progress" id="toTopProgress" cx="22" cy="22" r="19"></circle>
+      </svg>
+      <span class="to-top__arrow">↑</span>
+    </button>
+  </footer>
+
+  <!-- Project modal -->
+  <div class="modal-overlay" id="projectModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal__close" id="modalClose" aria-label="Close">&times;</button>
+      <span class="modal__category" id="modalCategory"></span>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <p class="modal__desc" id="modalDesc"></p>
+      <div class="modal__tech" id="modalTech"></div>
+      <ul class="modal__features" id="modalFeatures"></ul>
+      <div class="modal__links" id="modalLinks"></div>
+    </div>
+  </div>
+
+  <!-- Profile edit modal -->
+  <div class="modal-overlay" id="profileModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal__close" id="profileModalClose" aria-label="Close">&times;</button>
+      <h3 class="modal__title">Edit Profile</h3>
+      <div class="modal__form">
+        <label>Name<input type="text" id="profileName" /></label>
+        <label>Title<input type="text" id="profileTitle" /></label>
+        <label>Roles (comma separated)<input type="text" id="profileRoles" /></label>
+        <label>Location<input type="text" id="profileLocation" /></label>
+        <label>Email<input type="email" id="profileEmail" /></label>
+        <label>Phone<input type="text" id="profilePhone" /></label>
+        <label>Avatar<input type="file" id="profileAvatarInput" accept="image/*" /></label>
+        <div class="avatar-preview" id="profileAvatarPreview">Preview</div>
+        <div class="modal__actions">
+          <button class="btn btn--ghost" id="profileReset">Reset to Default</button>
+          <button class="btn btn--ghost" id="profileCancel">Cancel</button>
+          <button class="btn btn--primary" id="profileSave">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating edit profile button -->
+  <button id="profileEditBtn" class="profile-edit-btn" aria-label="Edit profile">Edit</button>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+  <!-- Command palette -->
+  <div class="cmdk-overlay" id="cmdkOverlay" aria-hidden="true">
+    <div class="cmdk" role="dialog" aria-modal="true" aria-label="Command palette">
+      <div class="cmdk__input-row">
+        <span class="cmdk__icon">⌘</span>
+        <input type="text" id="cmdkInput" class="cmdk__input" placeholder="Jump to a section, project, or action…" autocomplete="off" />
+        <span class="cmdk__hint">Esc</span>
+      </div>
+      <ul class="cmdk__list" id="cmdkList"></ul>
+    </div>
+  </div>
+
+  <!-- Keyboard shortcuts help -->
+  <div class="modal-overlay" id="shortcutsModal" aria-hidden="true">
+    <div class="modal modal--sm" role="dialog" aria-modal="true">
+      <button class="modal__close" id="shortcutsModalClose" aria-label="Close">&times;</button>
+      <h3 class="modal__title">Keyboard Shortcuts</h3>
+      <ul class="shortcuts-list">
+        <li><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>K</kbd><span>Open command palette</span></li>
+        <li><kbd>Shift</kbd> + <kbd>?</kbd><span>Show this help</span></li>
+        <li><kbd>Esc</kbd><span>Close any open dialog</span></li>
+        <li><kbd>T</kbd><span>Toggle theme</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <button id="shortcutsBtn" class="shortcuts-btn" aria-label="Keyboard shortcuts">?</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cmdk.js"></script>
+</body>
+</html>

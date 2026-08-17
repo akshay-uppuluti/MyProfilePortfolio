@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Insights — Uppuluti Akshay | Senior Software Engineer / SDET</title>
+<meta name="description" content="Articles and insights on test automation, BDD frameworks, API testing, and CI/CD from Uppuluti Akshay." />
+<meta name="theme-color" content="#05060f" />
+<link rel="canonical" href="https://uppulutiakshay.dev/insights.html" />
+<link rel="icon" type="image/png" href="images/AkshayImageDP.png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Insights — Uppuluti Akshay" />
+<meta property="og:description" content="Articles and insights on test automation, BDD frameworks, API testing, and CI/CD from Uppuluti Akshay." />
+<meta property="og:image" content="images/AkshayImageDP.png" />
+<meta name="twitter:card" content="summary" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <div class="bg-fx" aria-hidden="true">
+    <canvas id="particleCanvas"></canvas>
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+    <span class="orb orb--4"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="loader" id="loader">
+    <div class="loader__ring"></div>
+    <img src="images/AkshayImageDP.png" alt="Uppuluti Akshay" class="loader__img" />
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="index.html#home" class="nav__logo">
+      <img src="images/AkshayImageDP.png" alt="Uppuluti Akshay" class="nav__logo-img" />
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html#home" class="nav__link">Home</a>
+      <a href="index.html#about" class="nav__link">About</a>
+      <a href="index.html#skills" class="nav__link">Skills</a>
+      <a href="index.html#experience" class="nav__link">Experience</a>
+      <a href="index.html#projects" class="nav__link">Projects</a>
+      <a href="index.html#certifications" class="nav__link">Certifications</a>
+      <a href="insights.html" class="nav__link is-active">Insights</a>
+      <a href="index.html#contact" class="nav__link">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="cmdk-trigger" id="cmdkTrigger" aria-label="Open command palette">
+        <span>⌘K</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle__icon">🌙</span>
+      </button>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ INSIGHTS HERO ============ -->
+    <section class="insights-hero" id="home">
+      <p class="section-tag reveal-up"><span class="section-tag__icon">✍️</span><span class="section-tag__text">writing</span></p>
+      <h1 class="section-title reveal-up">Insights &amp; Articles</h1>
+      <p class="insights-hero__lead reveal-up">
+        Notes on building resilient test automation frameworks, scaling CI/CD pipelines, and shipping
+        dependable software faster — drawn from real-world engineering work.
+      </p>
+
+      <div class="skills__search reveal-up">
+        <input type="text" id="insightsSearch" placeholder="Search articles by title or tag…" />
+      </div>
+
+      <div class="filter-bar reveal-up" id="insightsFilterBar">
+        <button class="filter-btn is-active" data-filter="All">All</button>
+      </div>
+
+      <div class="insights__grid" id="insightsGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Uppuluti Akshay. Crafted with precision &amp; passion.</p>
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  </footer>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+  <!-- Command palette -->
+  <div class="cmdk-overlay" id="cmdkOverlay" aria-hidden="true">
+    <div class="cmdk" role="dialog" aria-modal="true" aria-label="Command palette">
+      <div class="cmdk__input-row">
+        <span class="cmdk__icon">⌘</span>
+        <input type="text" id="cmdkInput" class="cmdk__input" placeholder="Jump to a section, project, or action…" autocomplete="off" />
+        <span class="cmdk__hint">Esc</span>
+      </div>
+      <ul class="cmdk__list" id="cmdkList"></ul>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/insights.js"></script>
+  <script src="js/cmdk.js"></script>
+</body>
+</html>
