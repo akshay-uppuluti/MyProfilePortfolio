@@ -15,7 +15,7 @@ const PROFILE = {
   linkedIn: "linkedin.com/in/uppulutiakshay",
   linkedInUrl: "https://linkedin.com/in/uppulutiakshay",
   gitHub: "github.com/akshay-uppuluti",
-  gitHubUrl: "https://github.com/uppuluti-akshay",
+  gitHubUrl: "https://github.com/akshay-uppuluti",
   photoUrl: "images/AkshayImageDP.png",
   resumeUrl: "/files/Resume.pdf",
     avatar: "images/AkshayImageDP.png",
@@ -69,7 +69,7 @@ const PROFILE = {
       description: "A reusable BDD-driven UI automation framework with parallel execution and rich HTML reporting.",
       tech: [ "C#", "Selenium", "Reqnroll", "MSTest" ],
       features: [ "BDD framework", "Parallel execution", "Reporting", "CI/CD integration" ],
-      gitHubUrl: "https://github.com/uppuluti-akshay",
+      gitHubUrl: "https://github.com/akshay-uppuluti/CSharpFramework",
       liveUrl: ""
     },
     {
@@ -78,7 +78,7 @@ const PROFILE = {
       description: "A data-driven API test framework with a fluent request builder and automated response validation.",
       tech: [ "RestSharp", "MSTest", "Azure Pipelines" ],
       features: [ "Request builder", "Response validation", "Data-driven tests", "Reports" ],
-      gitHubUrl: "https://github.com/uppuluti-akshay",
+      gitHubUrl: "https://github.com/akshay-uppuluti/CSharpFramework",
       liveUrl: ""
     },
     {
@@ -87,7 +87,7 @@ const PROFILE = {
       description: "WinAppDriver-based automation suite for validating Windows desktop application workflows end-to-end.",
       tech: [ "C#", "WinAppDriver", "MSTest" ],
       features: [ "Page object model", "Screenshot on failure", "CI integration" ],
-      gitHubUrl: "https://github.com/uppuluti-akshay",
+      gitHubUrl: "https://github.com/akshay-uppuluti",
       liveUrl: ""
     },
     {
@@ -96,8 +96,8 @@ const PROFILE = {
       description: "A responsive wholesale product catalog website built with modern front-end tooling for Client requirement.",
       tech: [ "React", "TypeScript", "Tailwind" ],
       features: [ "Product catalog", "Responsive design", "SEO optimized" ],
-      gitHubUrl: "https://github.com/uppuluti-akshay",
-      liveUrl: "https://github.com/uppuluti-akshay"
+      gitHubUrl: "https://github.com/akshay-uppuluti/ApplicationRetail",
+      liveUrl: "https://github.com/akshay-uppuluti/ApplicationRetail"
     }
   ],
 
