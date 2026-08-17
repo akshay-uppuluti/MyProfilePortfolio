@@ -14,7 +14,7 @@ const PROFILE = {
   phone: "+91 7224840581",
   linkedIn: "linkedin.com/in/uppulutiakshay",
   linkedInUrl: "https://linkedin.com/in/uppulutiakshay",
-  gitHub: "github.com/uppuluti-akshay",
+  gitHub: "github.com/akshay-uppuluti",
   gitHubUrl: "https://github.com/uppuluti-akshay",
   photoUrl: "images/AkshayImageDP.png",
   resumeUrl: "/files/Resume.pdf",
